@@ -29,7 +29,7 @@ The training is primarily intended for Grade 6s and 7s, but will be applicable t
  - What are git and GitHub, and how does version control work?
  - What are unit tests, and when should they be used?
 
-### Automation and reproducibility
+### Reproducibility and automation
  - What does it mean for analysis to be reproducible?
  - What is a reproducible analytical pipeline (RAP)?
  - What support is available to implement a RAP?
