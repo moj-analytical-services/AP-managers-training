@@ -14,7 +14,7 @@ We have two key analytical tools on the AP: RStudio (for coding in R) and Jupyte
 
 R is a language and environment for statistical computing and graphics. RStudio is an integrated development environment (IDE) for R, which makes coding in R easier and more efficient for users. R is now commonly used across the department (and across government and beyond) for creating statistical models, data analysis and reproducible analytical pipelines (RAP). Being completely open source means that it now has a vast array of packages covering things from data visualisation and dashboards to data wrangling and machine learning. A good collection can be found in the [Tidyverse](https://www.tidyverse.org/). In addition, the platform can host [RShiny](https://shiny.rstudio.com/) dashboards, one of many ways of sharing results from analysis in R with customers.
 
-For examples of some of the completed and ongoing Python projects in DASD see [here](https://github.com/moj-analytical-services?utf8=%E2%9C%93&q=&type=public&language=r). 
+For examples of some of the completed and ongoing R projects in DASD see [here](https://github.com/moj-analytical-services?utf8=%E2%9C%93&q=&type=public&language=r). 
 
 #### JupyterLab
 
