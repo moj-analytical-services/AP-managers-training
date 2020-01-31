@@ -18,7 +18,7 @@ For examples of some of the completed and ongoing Python projects in DASD see [h
 
 #### JupyterLab
 
-Python is a general purpose programming language. JupyterLab allows platform uses to code and create notebooks in Python. Python is an extremely versatile language. It has been used in the department for our data infrastructure and pipelines, as well as for machine learning and data analytics thanks to a vast number of top-notch plugins and libraries. Examples of commonly used libraries include [Pandas](https://pandas.pydata.org/) and [scikit-learn](https://scikit-learn.org/stable/). Python is easy to read and has quite a shallow learning curve so is beginner-friendly.
+Python is a general purpose programming language. JupyterLab allows platform users to code and create notebooks in Python. Python is an extremely versatile language. It has been used in the department for our data infrastructure and pipelines, as well as for machine learning and data analytics thanks to a vast number of top-notch plugins and libraries. Examples of commonly used libraries include [Pandas](https://pandas.pydata.org/) and [scikit-learn](https://scikit-learn.org/stable/). Python is easy to read and has quite a shallow learning curve so is beginner-friendly.
 
 For examples of some of the completed and ongoing Python projects in DASD see [here](https://github.com/moj-analytical-services?utf8=%E2%9C%93&q=&type=public&language=python).
 
