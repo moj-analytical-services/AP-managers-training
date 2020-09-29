@@ -26,8 +26,8 @@ The training is primarily intended for Grade 6s and 7s, but will be applicable t
 ### Quality assurance and code storage with git and GitHub
  - What are our coding standards?
  - How can you ensure appropriate analytical quality assurance on your project?
- - What are git and GitHub, and how does version control work?
- - What are unit tests, and when should they be used?
+ - Why should I use GitHub, and how does version control work?
+ - What are automated tests, and when should they be used?
 
 ### Reproducibility and automation
  - What does it mean for analysis to be reproducible?
