@@ -11,25 +11,26 @@ Curated databases are also stored in Amazon S3 but are accessed using a service 
 
 ### Home directories
 
-Each user has their own home directory. Home directories should be used to store working copies of code and analytical outputs
+Each user has their own home directory. Home directories should be used to store working copies of code and analytical outputs.
 
 They are not connected to storage on DOM1 or Quantum.
 
-You can upload data directly from your local machine within RStudio or JupyterLab and can upload data to and download data from Amazon S3..
+You can upload data directly from your local machine within RStudio or JupyterLab and can upload data to and download data from Amazon S3.
 
 ### Amazon S3
 
-Data in Amazon S3 is stored in buckets or data sources. There are two different types of data source: warehouse data sources and app data sources.
+Data in Amazon S3 is stored in buckets. These are also known as data sources on the Analytical Platform. There are two different types of data source:
+
+* warehouse data source
+* app data source
 
 #### Warehouse data source
 
-Warehouse data sources are used to store data that is accessed by code you run yourself, for example, in RStudio or JupyterLab. You can create warehouse data sources yourself and can provide access to other users you need to collaborate with.
-
-Users can create their own warehouse data sources from the Analytical Platform control panel. They will automatically be made an admin and can manage access for other users.
+Warehouse data sources are used to store data that is accessed by code you run yourself, for example, in RStudio or JupyterLab. You can create warehouse data sources yourself and can provide access to other users you need to collaborate with in the Analytical Platform control panel. When you create a warehouse data source, you will automatically be made an admin and can manage access for other users.
 
 #### App data source
 
-Webapp data sources are used to store data that is accessed by code run by the Analytical Platform, for example by deployed apps or by Airflow pipelines. You cannot create app data sources yourself – you must ask the Analytical Platform team to create one on your behalf.
+App data sources are used to store data that is accessed by code run on the Analytical Platform, for example by deployed apps or by Airflow pipelines. You cannot create app data sources yourself. You must ask the Analytical Platform team to create one on your behalf.
 
 App data sources should only contain the minimum data required for an app or Airflow pipeline to work.
 
@@ -37,15 +38,15 @@ App data sources should not be used for muliple apps or Airflow pipelines even i
 
 #### Access a data source
 
-By default, users do not have access to any data stored in Amazon S3. To get access to a data source, a user must request permission from the relevant admin user.
+By default, you will not have access to any data stored in Amazon S3. To get access to a data source, you must request permission from the relevant admin user.
 
 #### Upload and download data
 
-Users can upload data to and download data from Amazon S3 using the online console.
+You can upload data to and download data from Amazon S3 using the online console. You can access the Amazon S3 console from the Analytical Platform control panel.
 
 #### Read and write data using analytical tools
 
-Users can read data stored in Amazon S3 into analytical tools (RStudio and JupyterLab) using the `s3tools` and `boto3` packages.
+You can read data stored in Amazon S3 into analytical tools (RStudio and JupyterLab) using the `s3tools` and `boto3` packages.
 
 ### Amazon Athena
 
@@ -57,37 +58,15 @@ You can use Amazon Athena to access and query curated databases on the Analytica
 
 #### Curated databases
 
-The following databases are currently available on the Analytical Platform:
+Several curated databases are currently available on the Analytical Platform. To access any curated databases on the Analytical Platform, you __must__ have completed the baseline personnel security standard (BPSS).
 
-* CREST
-* LIBRA
-* XHIBIT
-* NOMIS
-
-We are planning to make the following databases available in the future.
-
-* NDelius
-* OASys
-* LAA MAAT
-* SOP
-* FamilyMan
-* CaseMan
-
-You can find more information on our [roadmap](https://trello.com/b/OIL5fFOx).
-
-Each database has different access levels to ensure that access is provided on a need-to-know basis.
-
-##### Get access to a curated database
-
-To access all curated databases on the Analytical Platform, you __must__ have completed the baseline personnel security standard (BPSS).
-
-In order to access a curated database, you must complete a [data access form](https://forms.office.com/Pages/ResponsePage.aspx?id=KEeHxuZx_kGp4S6MNndq2I8ebMaq5PFBoMAkkhrMYHBUODRaN1ZWVlhRUVMxQ0VIRVQ1MlRLRkM4NS4u).
+To see what curated databases are available and to request access, see the [data-engineering-database-access](https://github.com/moj-analytical-services/data-engineering-database-access) repository.
 
 ##### Query a curated database
 
-Curated databases can be queried using SQL. Amazon Athena uses a variety of SQL called Presto, which has some small synatical differences compared to standard SQL.
+Curated databases can be queried using SQL. Amazon Athena uses a variety of SQL called [Presto](https://prestosql.io/docs/current/sql.html), which has some small synatical differences compared to standard SQL.
 
-You can query a curated database in the Amazon Athena UI or within RStudio or JupyterLab using the `dbtools` or `pydbtools` packages.
+You can query a curated database in the Amazon Athena console or within RStudio or JupyterLab using the [`dbtools`](https://github.com/moj-analytical-services/dbtools) or [`pydbtools`](https://github.com/moj-analytical-services/pydbtools) packages.
 
 ### GitHub
 
@@ -171,4 +150,4 @@ Personal data can be kept for longer if it is solely required for public interes
 
 ### Further information
 
-For further information and support regarding information governance, contact the Data Protection Officer (DPO).
+For further information and support regarding information governance, see the [Information Governance](https://user-guidance.services.alpha.mojanalytics.xyz/information-governance.html#information-governance) section of the Analytical Platform user guidance or contact the Data Protection Officer (DPO).
